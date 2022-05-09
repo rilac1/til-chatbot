@@ -1,0 +1,12 @@
+{
+  "queryResult": {
+    "parameters": {
+      "startTime": "2022-05-09T13:00:00+09:00",
+      "endTime": "2022-05-09T14:00:00+09:00",
+      "categoryName": "hello"
+    },
+    "intent": {
+      "displayName": "SAVE_RECORD"
+    }
+  }
+}
