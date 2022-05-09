@@ -9,6 +9,8 @@ import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RestController;
 
+import javax.validation.Valid;
+
 @RestController
 @RequiredArgsConstructor
 public class WebhookController {
@@ -16,7 +18,7 @@ public class WebhookController {
     private final RecordService recordService;
 
     @PostMapping("/api/v1/webhook")
-    public void parseWebhook(@RequestBody WebhookRequest request) {
+    public void parseWebhook(@Valid @RequestBody WebhookRequest request) {
 
         IntentType intentType = request.getIntentType();
 
