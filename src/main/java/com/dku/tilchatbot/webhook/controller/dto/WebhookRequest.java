@@ -39,6 +39,9 @@ public class WebhookRequest {
 
             @JsonFormat(pattern = "yyyy-MM-dd'T'HH:mm:ssXXX")
             private LocalDate date;
+
+            @JsonFormat(pattern = "yyyy-MM-dd")
+            private LocalDate lookupDate;
         }
 
         @Getter
